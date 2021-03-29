@@ -32,4 +32,8 @@ type AnyURI string
 
 type NCName string
 
+type NMTOKEN string
+
+type NMTOKENS string
+
 `
