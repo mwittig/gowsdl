@@ -446,6 +446,7 @@ var xsd2GoTypes = map[string]string{
 	"nmtokens":           "NMTOKENS",
 	"nonnegativeinteger": "int32",
 	"positiveinteger":    "int32",
+	"id":                 "string",
 }
 
 func removeNS(xsdType string) string {
