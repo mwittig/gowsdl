@@ -43,6 +43,9 @@ func (t *traverser) traverseElement(elm *XSDElement) {
 		t.traverseSimpleType(elm.SimpleType)
 		elm.Type = elm.SimpleType.Restriction.Base
 	}
+	if elm.Type == "" {
+		elm.Type = "string"
+	}
 }
 
 func (t *traverser) traverseSimpleType(st *XSDSimpleType) {
